@@ -1,0 +1,17 @@
+@mixin prefix( $prop, $value ) {
+	// vendor prefixes
+	-moz-#{$prop}:		$value;
+	-webkit-#{$prop}:	$value;
+	-o-#{$prop}: 		$value;
+	-khtml-#{$prop}:	$value;
+	
+	// standard
+	#{$prop}:			$value;
+}
+
+// Use for writing mobile-only rules, or overwriting desktop rules
+@mixin mobile($prop, $val) {
+    @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+        #{$prop}: #{$val};
+    }
+}

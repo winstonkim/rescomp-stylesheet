@@ -1,0 +1,19 @@
+.m-banner {
+	background-size: cover;
+	background-position: center center;
+	padding: 8em 0 8em 0;
+
+	span {
+		display: inline-block;
+		color: $white;
+		text-transform: uppercase;
+		font: 40px $default-font;
+		font-weight: 300;
+		letter-spacing: 2px;
+		text-align: center;
+		padding: 20px;
+		border: 1px solid;
+		margin-left: 50%;
+		@include prefix(transform, translate(-50%,0));
+	}
+}

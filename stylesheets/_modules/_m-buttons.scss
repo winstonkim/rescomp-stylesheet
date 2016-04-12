@@ -1,0 +1,15 @@
+.m-button {
+    background-color: $blue-80;
+    border-radius: 500px;
+    color: $white;
+    display: inline-block;
+    padding: .5em 2em;
+    @include prefix(transition, all .25s);
+    &:hover {
+        background-color: $blue;
+        color: $white;
+    }
+}
+.m-button-center {
+    margin: 0 auto;
+}
