@@ -73,3 +73,11 @@ ol {
 	padding-left: 3em;
     @include mobile(padding-left, 2em);
 }
+
+// Background Colors
+.blue {
+	background-color: $blue;
+}
+.light-grey {
+	background-color: $light-grey;
+}

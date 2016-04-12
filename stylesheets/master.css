@@ -124,6 +124,12 @@ ol {
     ol {
       padding-left: 2em; } }
 
+.blue {
+  background-color: #2F859D; }
+
+.light-grey {
+  background-color: #DDDDDD; }
+
 /* Layouts */
 .container {
   margin-right: auto;
@@ -144,11 +150,10 @@ ol {
     width: 1170px; } }
 .container-fluid {
   margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  margin-left: auto; }
 
 .row {
+  display: inline-block;
   margin-left: -15px;
   margin-right: -15px; }
 
@@ -783,7 +788,7 @@ ol {
   .col-lg-offset-0 {
     margin-left: 0%; } }
 /* Modules */
-.m-button {
+.m-button a {
   background-color: rgba(47, 133, 157, 0.8);
   border-radius: 500px;
   color: #FFFFFF;
@@ -794,12 +799,12 @@ ol {
   -o-transition: all 0.25s;
   -khtml-transition: all 0.25s;
   transition: all 0.25s; }
-  .m-button:hover {
+  .m-button a:hover {
     background-color: #2F859D;
     color: #FFFFFF; }
 
 .m-button-center {
-  margin: 0 auto; }
+  text-align: center; }
 
 .m-banner {
   background-size: cover;
