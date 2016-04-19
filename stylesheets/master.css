@@ -46,6 +46,7 @@ table {
 /* Shades of blue */
 /* Secondary Colors */
 /* Monochrome Pallete */
+/* New Colors */
 * {
   box-sizing: border-box; }
 
@@ -826,5 +827,51 @@ ol {
     -o-transform: translate(-50%, 0);
     -khtml-transform: translate(-50%, 0);
     transform: translate(-50%, 0); }
+
+.m-spotlight {
+  background: #eee;
+  width: 100%; }
+  .m-spotlight.m-spotlight-white {
+    background: #FFFFFF; }
+  .m-spotlight.m-spotlight-grey {
+    background: #DDDDDD; }
+  .m-spotlight .m-spotlight-image {
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*add background-image to .m-spotlight-image and specify position like so:
+    &#jobs {
+      background-image: url('/images/teams/desktopadministration/3.jpg');
+      background-position: right center;
+    }*/ }
+    @media handheld, only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+      .m-spotlight .m-spotlight-image {
+        display: block;
+        width: 100%;
+        height: 300px; } }
+  .m-spotlight .m-spotlight-text {
+    padding: 4em;
+    vertical-align: middle;
+    width: 50%; }
+    @media handheld, only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+      .m-spotlight .m-spotlight-text {
+        display: block;
+        max-width: 100%;
+        padding: 2em;
+        text-align: center;
+        width: 100%; } }
+    .m-spotlight .m-spotlight-text .m-spotlight-text-container {
+      max-width: 530px; }
+
+.m-navbar {
+  background-color: #418B8D; }
+  .m-navbar .m-navbar-container {
+    padding: 2em; }
+
+/* Custom */
+.rainbow {
+  background-image: url("https://c2.staticflickr.com/4/3929/15276223740_fdaf8e6c28_h.jpg");
+  background-position: center center; }
 
 /*# sourceMappingURL=master.css.map */

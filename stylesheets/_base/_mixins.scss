@@ -10,8 +10,11 @@
 }
 
 // Use for writing mobile-only rules, or overwriting desktop rules
-@mixin mobile($prop, $val) {
-    @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-        #{$prop}: #{$val};
-    }
+@mixin mobile($class) {
+	@if $class == sm {
+	    @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) { @content; }
+	}
+	@if $class == md {
+	    @media handheld, only screen and (max-width: 700px), only screen and (max-device-width: 700px) { @content; }
+  	}
 }

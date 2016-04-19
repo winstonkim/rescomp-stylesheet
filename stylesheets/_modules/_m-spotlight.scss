@@ -1,0 +1,42 @@
+.m-spotlight {
+    background: #eee;
+    width: 100%;
+    &.m-spotlight-white {
+      background: $white;
+    }
+    &.m-spotlight-grey {
+      background: $light-grey;
+    }
+    .m-spotlight-image {
+      height: 100%;
+      width: 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include mobile(md) {
+        display: block;
+        width: 100%;
+        height: 300px;
+      }
+      /*add background-image to .m-spotlight-image and specify position like so:
+      &#jobs {
+        background-image: url('/images/teams/desktopadministration/3.jpg');
+        background-position: right center;
+      }*/
+    }
+
+    .m-spotlight-text {
+      padding: 4em;
+      vertical-align: middle;
+      width: 50%;
+      @include mobile(md) {
+        display: block;
+        max-width: 100%;
+        padding: 2em;
+        text-align: center;
+        width: 100%;
+      }
+      .m-spotlight-text-container {
+        max-width: 530px;
+      }
+    }
+  }

@@ -18,4 +18,9 @@
 
 /* Modules */
 @import '_modules/m-buttons',
-		'_modules/m-banner';
+		'_modules/m-banner',
+		'_modules/m-spotlight',
+		'_modules/m-navbar';
+
+/* Custom */
+@import '_custom/index';

@@ -66,12 +66,16 @@ em {
 ul {
 	list-style: disc outside;
 	padding-left: 3em;
-    @include mobile(padding-left, 2em);
+    @include mobile(sm) {
+    	padding-left: 2em;
+    }
 }
 ol {
 	list-style: decimal outside;
 	padding-left: 3em;
-    @include mobile(padding-left, 2em);
+    @include mobile(sm) {
+    	padding-left: 2em;
+    }
 }
 
 // Background Colors
