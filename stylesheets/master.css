@@ -790,7 +790,7 @@ ol {
     margin-left: 0%; } }
 /* Modules */
 .m-button a {
-  background-color: rgba(47, 133, 157, 0.8);
+  background-color: #418B8D;
   border-radius: 500px;
   color: #FFFFFF;
   display: inline-block;
@@ -801,7 +801,7 @@ ol {
   -khtml-transition: all 0.25s;
   transition: all 0.25s; }
   .m-button a:hover {
-    background-color: #2F859D;
+    background-color: #31696a;
     color: #FFFFFF; }
 
 .m-button-center {
@@ -867,7 +867,9 @@ ol {
 .m-navbar {
   background-color: #418B8D; }
   .m-navbar .m-navbar-container {
-    padding: 2em; }
+    padding: 1em; }
+    .m-navbar .m-navbar-container .m-navbar-logo {
+      height: 50px; }
 
 /* Custom */
 .rainbow {

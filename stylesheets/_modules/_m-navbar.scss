@@ -1,6 +1,9 @@
 .m-navbar {
 	background-color: $teal;
 	.m-navbar-container {
-		padding: 2em;
+		padding: 1em;
+		.m-navbar-logo {
+			height: 50px;
+		}
 	}
 }

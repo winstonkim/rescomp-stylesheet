@@ -1,13 +1,13 @@
 .m-button {
     a {
-        background-color: $blue-80;
+        background-color: $teal;
         border-radius: 500px;
         color: $white;
         display: inline-block;
         padding: .5em 2em;
         @include prefix(transition, all .25s);
         &:hover {
-            background-color: $blue;
+            background-color: darken($teal, 10%);
             color: $white;
         }
     }
