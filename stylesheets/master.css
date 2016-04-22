@@ -52,13 +52,16 @@ table {
 
 body {
   color: #4F4F4F;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.5; }
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: .5px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Museo", "Museo Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: semibold;
+  font-family: "Museo", "Museo Slab", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: initial;
   margin-bottom: .5em; }
   h1.low-margin, h2.low-margin, h3.low-margin, h4.low-margin, h5.low-margin, h6.low-margin {
     margin-bottom: .25em; }
@@ -815,7 +818,7 @@ ol {
     display: inline-block;
     color: #FFFFFF;
     text-transform: uppercase;
-    font: 40px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 40px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     letter-spacing: 2px;
     text-align: center;
@@ -859,7 +862,6 @@ ol {
         display: block;
         max-width: 100%;
         padding: 2em;
-        text-align: center;
         width: 100%; } }
     .m-spotlight .m-spotlight-text .m-spotlight-text-container {
       max-width: 530px; }
@@ -867,9 +869,33 @@ ol {
 .m-navbar {
   background-color: #418B8D; }
   .m-navbar .m-navbar-container {
-    padding: 1em; }
-    .m-navbar .m-navbar-container .m-navbar-logo {
-      height: 50px; }
+    height: 83px;
+    padding: 0; }
+    .m-navbar .m-navbar-container .m-navbar-logo-container {
+      align-items: center;
+      display: flex;
+      float: left;
+      height: 83px; }
+      .m-navbar .m-navbar-container .m-navbar-logo-container .m-navbar-logo {
+        height: 50px; }
+    .m-navbar .m-navbar-container .m-navbar-links {
+      align-items: center;
+      display: flex;
+      float: right;
+      height: 83px;
+      list-style: none; }
+      .m-navbar .m-navbar-container .m-navbar-links li {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        letter-spacing: 1px;
+        padding: 1.5em;
+        text-transform: uppercase; }
+        .m-navbar .m-navbar-container .m-navbar-links li:hover {
+          background-color: #52adaf; }
+        .m-navbar .m-navbar-container .m-navbar-links li a {
+          color: #FFFFFF;
+          text-decoration: none; }
 
 /* Custom */
 .rainbow {
