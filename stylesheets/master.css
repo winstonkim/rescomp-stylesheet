@@ -6,9 +6,9 @@
  *
  */
 /* Base */
-@import url("./fonts/museo_slab/font.css");
-@import url("./fonts/museo/font.css");
-@import url("./fonts/bebas_neue/font.css");
+@import url("_base/_fonts/_museo_slab/font.css");
+@import url("_base/_fonts/_museo/font.css");
+@import url("_base/_fonts/_bebas_neue/font.css");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@ body {
   letter-spacing: .5px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Museo", "Museo Slab", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Museo, "Museo Slab", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   letter-spacing: initial;
   margin-bottom: .5em; }
@@ -813,7 +813,7 @@ ol {
 .m-banner {
   background-size: cover;
   background-position: center center;
-  padding: 8em 0 8em 0; }
+  padding: 9em 0 9em 0; }
   .m-banner span {
     display: inline-block;
     color: #FFFFFF;
@@ -867,7 +867,8 @@ ol {
       max-width: 530px; }
 
 .m-navbar {
-  background-color: #418B8D; }
+  position: absolute;
+  width: 100%; }
   .m-navbar .m-navbar-container {
     height: 83px;
     padding: 0; }
@@ -883,19 +884,54 @@ ol {
       display: flex;
       float: right;
       height: 83px;
-      list-style: none; }
+      list-style: none;
+      padding-left: initial; }
       .m-navbar .m-navbar-container .m-navbar-links li {
-        align-items: center;
-        display: flex;
         height: 100%;
         letter-spacing: 1px;
-        padding: 1.5em;
+        position: relative;
         text-transform: uppercase; }
-        .m-navbar .m-navbar-container .m-navbar-links li:hover {
-          background-color: #52adaf; }
         .m-navbar .m-navbar-container .m-navbar-links li a {
+          align-items: center;
+          border-top: solid 3px transparent;
           color: #FFFFFF;
-          text-decoration: none; }
+          display: flex;
+          height: 100%;
+          padding: 1.5em;
+          text-decoration: none;
+          -moz-transition: all 0.25s;
+          -webkit-transition: all 0.25s;
+          -o-transition: all 0.25s;
+          -khtml-transition: all 0.25s;
+          transition: all 0.25s; }
+          .m-navbar .m-navbar-container .m-navbar-links li a:hover {
+            background-color: white;
+            color: #4F4F4F;
+            border-top: solid 3px #FFFFFF; }
+  .m-navbar .sub-menu {
+    list-style: none;
+    padding-left: initial;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    text-align: right; }
+    .m-navbar .sub-menu li {
+      min-width: 500px;
+      width: 100%; }
+      .m-navbar .sub-menu li a {
+        border-top: initial !important;
+        padding: 1em 1.5em !important;
+        color: #4F4F4F !important; }
+  .m-navbar li:hover .sub-menu {
+    z-index: 3;
+    opacity: 1; }
+  .m-navbar .sub-menu li a:hover, .m-navbar .sub-menu .current-item a {
+    background: #555; }
 
 /* Custom */
 .rainbow {

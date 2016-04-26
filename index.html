@@ -4,6 +4,7 @@
 <title>Test Page</title>
 <link rel="stylesheet" type="text/css" href="./stylesheets/master.css" />
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 </head>
 <body>
 <div class="container-fluid m-navbar">
@@ -16,19 +17,43 @@
 			<a href="#">Support</a>
 		</li>
 		<li>
-			<a href="#">Services</a>
+			<a href="#">Services&nbsp;<i class="fa fa-angle-down"></i></a>
+			<ul class="sub-menu">
+            	<li><a href="/services">Network Access</a></li>
+            	<li><a href="/services/#support">Technical Support</a></li>
+            	<li><a href="/services/#tv">Cable TV</a></li>
+            	<li><a href="/services/#conference">Services for Conference Guests</a></li>
+        	</ul>
 		</li>
 		<li>
-			<a href="#">Policies</a>
+			<a href="#">Policies&nbsp;<i class="fa fa-angle-down"></i></a>
+			<ul class="sub-menu">
+            	<li><a href="/policies">File Sharing & Copyright</a></li>
+            	<li><a href="/policies/#security">Minimum Security Requirements</a></li>
+            	<li><a href="/policies/#routers">Wireless Routers</a></li>
+            	<li><a href="/policies/#cup">Campus Network Policies</a></li>
+        	</ul>
 		</li>
 		<li>
 			<a href="#">Resources</a>
 		</li>
 		<li>
-			<a href="#">Security</a>
+			<a href="#">Security&nbsp;<i class="fa fa-angle-down"></i></a>
+			<ul class="sub-menu">
+            	<li><a href="/security/besecure">Be Secure</a></li>
+            	<li><a href="/security/mobile">Mobile Security</a></li>
+            	<li><a href="/resources">Tips & Tricks</a></li>
+        	</ul>
+
 		</li>
 		<li>
-			<a href="#">About</a>
+			<a href="#">About&nbsp;<i class="fa fa-angle-down"></i></a>
+			<ul class="sub-menu" id="about-dropdown">
+            	<li><a href="/about">What We Do</a></li>
+            	<li><a href="/about/#teams" class="teams">Teams</a></li>
+            	<li><a href="/about/#careers" class="careers">Student Jobs</a></li>
+            	<li><a href="/about/#contactus" class="contactus">Contact Us</a></li>
+        	</ul>
 		</li>
 	</ul>
 	</div>

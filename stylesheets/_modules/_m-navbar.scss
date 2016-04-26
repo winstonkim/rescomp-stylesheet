@@ -1,5 +1,6 @@
 .m-navbar {
-	background-color: $teal;
+	position: absolute;
+	width: 100%;
 	.m-navbar-container {
 		height: 83px;
 		padding: 0;
@@ -10,7 +11,7 @@
 			height: 83px;
 			.m-navbar-logo {
 				height: 50px;
-			}	
+			}
 		}
 		.m-navbar-links {
 			align-items: center;
@@ -18,21 +19,60 @@
 			float: right;
 			height: 83px;
 			list-style: none;
+			padding-left: initial;
 			li {
-				align-items: center;
-				display: flex;
 				height: 100%;
 				letter-spacing: 1px;
-				padding: 1.5em;
+				position: relative;
 				text-transform: uppercase;
-				&:hover {
-					background-color: lighten($teal, 10%);
-				}
 				a {
+					align-items: center;
+					border-top: solid 3px transparent;
 					color: $white;
+					display: flex;
+					height: 100%;
+					padding: 1.5em;
 					text-decoration: none;
+					@include prefix(transition, all .25s);
+					&:hover {
+						background-color: rgba(255,255,255,1);
+						color: $black;
+						border-top: solid 3px $white;
+					}
 				}
 			}
 		}
+	}
+	.sub-menu {
+		list-style: none;
+		padding-left: initial;
+		position:absolute;
+		top:100%;
+		right: 0;
+		z-index:-1;
+		opacity:0;
+		transition:opacity linear 0.15s;
+		box-shadow:0px 2px 3px rgba(0,0,0,0.3);
+		background-color: transparentize($white, 0);
+		text-align: right;
+		li {
+			min-width: 500px;
+			width: 100%;
+			a {
+				border-top: initial !important;
+				// margin: 0 !important;
+				padding: 1em 1.5em !important;
+				color: $black !important;
+			}
+		}
+	}
+
+	li:hover .sub-menu {
+		z-index:3;
+		opacity:1;
+	}
+
+	.sub-menu li a:hover, .sub-menu .current-item a {
+    	background:#555;
 	}
 }
