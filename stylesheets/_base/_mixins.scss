@@ -15,6 +15,9 @@
 	    @media handheld, only screen and (max-width: 480px), only screen and (max-device-width: 480px) { @content; }
 	}
 	@if $class == md {
-	    @media handheld, only screen and (max-width: 700px), only screen and (max-device-width: 700px) { @content; }
+	    @media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) { @content; }
+  	}
+  	@if $class == lg {
+	    @media handheld, only screen and (max-width: 992px), only screen and (max-device-width: 992px) { @content; }
   	}
 }
